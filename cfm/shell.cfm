@@ -11,7 +11,7 @@
 ***
 ***  Project Leads:
 ***         Kevin Johnson <kjohnson@secureideas.net
-***         Tim Medin <tim@securitywhole.com>
+***         Tim Medin <tim@counterhack.com>
 ***
 *** Copyright 2013 by Kevin Johnson and the Laudanum Team
 ***

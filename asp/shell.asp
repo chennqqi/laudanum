@@ -10,14 +10,14 @@
 ' ***
 ' ***  Project Leads:
 ' ***         Kevin Johnson <kjohnson@secureideas.net
-' ***         Tim Medin <tim@securitywhole.com>
+' ***         Tim Medin <tim@counterhack.com>
 ' ***
 ' *** Copyright 2013 by Kevin Johnson and the Laudanum Team
 ' ***
 ' ********************************************************************************
 ' ***
 ' ***   Updated and fixed by Robin Wood <Digininja>
-' ***   Updated and fixed by Tim Medin <tim@securitywhole.com
+' ***   Updated and fixed by Tim Medin <tim@counterhack.com
 ' ***
 ' ********************************************************************************
 ' *** This program is free software; you can redistribute it and/or
