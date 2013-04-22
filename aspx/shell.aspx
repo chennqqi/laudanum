@@ -16,7 +16,7 @@
 ***         Kevin Johnson <kjohnson@secureideas.net>
 ***         Tim Medin <tim@securitywhole.com>
 ***
-*** Copyright 2012 by Kevin Johnson and the Laudanum Team
+*** Copyright 2013 by Kevin Johnson and the Laudanum Team
 ***
 ********************************************************************************
 ***
