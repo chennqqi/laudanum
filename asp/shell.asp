@@ -75,7 +75,7 @@ Command: <Input width="200" type="text" name="cmd" value="<%=cmd%>" /><br />
 </form>
 <hr/>
 <address>
-Copyright &copy; 2012, <a href="mailto:laudanum@secureideas.net">Kevin Johnson</a> and the Laudanum team.<br/>
+Copyright &copy; 2013, <a href="mailto:laudanum@secureideas.net">Kevin Johnson</a> and the Laudanum team.<br/>
 Written by Tim Medin.<br/>
 Get the latest version at <a href="http://laudanum.secureideas.net">laudanum.secureideas.net</a>.
 </address>

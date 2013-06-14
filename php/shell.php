@@ -87,7 +87,7 @@ function error_handler($errno, $errstr, $errfile, $errline, $errcontext) {
 
   <hr>
   <address>
-  Copyright &copy; 2012, <a
+  Copyright &copy; 2013, <a
   href="mailto:laudanum@secureideas.net">Kevin Johnson</a> and the Laudanum team.<br>
   Get the latest version at <a href="http://laudanum.secureideas.net">laudanum.secureideas.net</a>.
   </address>
@@ -400,7 +400,7 @@ echo rtrim($padding . $_SESSION['output']);
 
   <hr/>
   <address>
-  Copyright &copy; 2012, <a href="mailto:laudanum@secureideas.net">Kevin Johnson</a> and the Laudanum team.<br/>
+  Copyright &copy; 2013, <a href="mailto:laudanum@secureideas.net">Kevin Johnson</a> and the Laudanum team.<br/>
   Updated by Tim Medin.<br/>
   Get the latest version at <a href="http://laudanum.secureideas.net">laudanum.secureideas.net</a>.
   </address>
