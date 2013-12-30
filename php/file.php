@@ -12,12 +12,13 @@
 ***         Kevin Johnson <kjohnson@secureideas.net
 ***         Tim Medin <tim@counterhack.com>
 ***
-*** Copyright 2013 by Kevin Johnson and the Laudanum Team
+*** Copyright 2014 by Kevin Johnson and the Laudanum Team
 ***
 ********************************************************************************
 ***
 *** This file allows browsing of the file system.
 *** Written by Tim Medin <tim@counterhack.com>
+*** 2013-12-28 Updated by Jason Gillam - fixed parent folder
 ***
 ********************************************************************************
 *** This program is free software; you can redistribute it and/or
@@ -79,7 +80,7 @@ function error_handler($errno, $errstr, $errfile, $errline, $errcontext) {
 
   <hr>
   <address>
-  Copyright &copy; 2013, <a href="mailto:laudanum@secureideas.net">Kevin Johnson</a> and the Laudanum team.<br/>
+  Copyright &copy; 2014, <a href="mailto:laudanum@secureideas.net">Kevin Johnson</a> and the Laudanum team.<br/>
   Written by Tim Medin.<br/>
   Get the latest version at <a href="http://laudanum.secureideas.net">laudanum.secureideas.net</a>.
   </address>
@@ -150,7 +151,7 @@ for ($i = 0; $i < count($dirs) - 2; $i++) {
 
 echo "<table>";
 echo "<tr><th>Name</th><th>Date</th><th>Size</th></tr>";
-echo "<tr><td><a href=\"" . $_SERVER['PHP_SELF'] . "?dir=$parentdir\">../</a></td><td> </td><td> </td></tr>";
+echo "<tr><td><a href=\"" . $_SERVER['PHP_SELF'] . "?dir=" . $parentdir . "\">../</a></td><td> </td><td> </td></tr>";
 
 //get listing, separate into directories and files
 $listingfiles = array();
@@ -187,7 +188,7 @@ else {
 </table>
   <hr>
   <address>
-  Copyright &copy; 2013, <a href="mailto:laudanum@secureideas.net">Kevin Johnson</a> and the Laudanum team.<br/>
+  Copyright &copy; 2014, <a href="mailto:laudanum@secureideas.net">Kevin Johnson</a> and the Laudanum team.<br/>
   Written by Tim Medin.<br/>
   Get the latest version at <a href="http://laudanum.secureideas.net">laudanum.secureideas.net</a>.
   </address>

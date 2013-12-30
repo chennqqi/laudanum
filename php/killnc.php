@@ -40,7 +40,23 @@
 ***************************************************************************** */
 
 
-include 'ipcheck.php';
+// ***************** Config entries below ***********************
+
+// IPs are enterable as individual addresses TODO: add CIDR support
+$allowedIPs = array("19.168.2.16", "192.168.1.100");
+
+# *********** No editable content below this line **************
+
+$allowed = 0;
+foreach ($allowedIPs as $IP) {
+    if ($_SERVER["REMOTE_ADDR"] == $IP)
+        $allowed = 1;
+}
+
+if ($allowed == 0) {
+    header("HTTP/1.0 404 Not Found");
+    die();
+}
 
 
 /* This error handler will turn all notices, warnings, and errors into fatal

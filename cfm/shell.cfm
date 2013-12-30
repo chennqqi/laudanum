@@ -14,7 +14,7 @@
 ***         Kevin Johnson <kjohnson@secureideas.net
 ***         Tim Medin <tim@securitywhole.com>
 ***
-*** Copyright 2013 by Kevin Johnson and the Laudanum Team
+*** Copyright 2014 by Kevin Johnson and the Laudanum Team
 ***
 ********************************************************************************
 ***
@@ -90,7 +90,7 @@
 
     <hr/>
     <address>
-        Copyright &copy; 2013, <a href="mailto:laudanum@secureideas.net">Kevin Johnson</a> and the Laudanum team.<br/>
+        Copyright &copy; 2014, <a href="mailto:laudanum@secureideas.net">Kevin Johnson</a> and the Laudanum team.<br/>
         Written by Tim Medin.<br/>
         Bug fixes by Matt Presson<br/>
         Get the latest version at <a href="http://laudanum.secureideas.net">laudanum.secureideas.net</a>.

@@ -15,7 +15,7 @@
 ' ***         Kevin Johnson <kjohnson@secureideas.net
 ' ***         Tim Medin <tim@counterhack.com>
 ' ***
-' *** Copyright 2013 by Kevin Johnson and the Laudanum Team
+' *** Copyright 2014 by Kevin Johnson and the Laudanum Team
 ' ***
 ' ********************************************************************************
 ' ***
@@ -74,7 +74,7 @@ function err_handler()
   <%=Err.Message%><br/>
   <hr/>
   <address>
-  Copyright &copy; 2013, <a href="mailto:laudanum@secureideas.net">Kevin Johnson</a> and the Laudanum team.<br/>
+  Copyright &copy; 2014, <a href="mailto:laudanum@secureideas.net">Kevin Johnson</a> and the Laudanum team.<br/>
   Written by Tim Medin.<br/>
   Get the latest version at <a href="http://laudanum.secureideas.net">laudanum.secureideas.net</a>.
   </address>
@@ -341,7 +341,7 @@ if len(FullUrl) = 0 then
 	</form>
 	<hr/>
 	<address>
-		Copyright &copy; 2013, <a href="mailto:laudanum@secureideas.net">Kevin Johnson</a> and the Laudanum team.<br/>
+		Copyright &copy; 2014, <a href="mailto:laudanum@secureideas.net">Kevin Johnson</a> and the Laudanum team.<br/>
 		Written by Tim Medin.<br/>
 		Get the latest version at <a href="http://laudanum.secureideas.net">laudanum.secureideas.net</a>.
 	</address>
