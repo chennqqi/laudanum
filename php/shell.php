@@ -48,7 +48,7 @@ $allowedIPs = array("192.168.1.55", "12.2.2.2");
 # format is "username" => "password" 
 # password is generated using sha1sum as shown below (don't forget the -n, KEVIN!)
 # echo -n  Password1 | sha1sum
-$users = array("kevin" => "b441ac06613fc8d63795be9ad0beaf55011936ac", "tim" => "a94a1fe5ccb19ba61c4c0873d391e987982fbbd3", "yomamma" => "a94a1fe5ccb19ba61c4c0873d391e987982fbbd3");
+$users = array("tim" => "d1dcb45789341639be6a40049d923bb233762db7") 
 
 # *********** No editable content below this line **************
 
