@@ -5,14 +5,15 @@
 *** A Collection of Injectable Files used during a Penetration Test
 ***
 *** More information is available at:
-***  http://laudanum.secureideas.net
+***  http://laudanum.professionallyevil.com/
 ***  laudanum@secureideas.net
 ***
 ***  Project Leads:
-***         Kevin Johnson <kjohnson@secureideas.net>
-***         Tim Medin <tim@counterhack.com>
+***         Kevin Johnson @secureideas <kjohnson@secureideas.com>
+***         Tim Medin @timmedin <tim@securitywhole.com>
+***         John Sawyer @johnhsawyer <john@inguardians.com>
 ***
-*** Copyright 2014 by Kevin Johnson and the Laudanum Team
+*** Copyright 2015 by The Laudanum Team
 ***
 ********************************************************************************
 ***
@@ -20,7 +21,7 @@
 *** version of PHPShell which is Copyright (C) 2000-2005 Martin Geisler
 *** <mgeisler[at]mgeisler.net>
 ***
-*** Updated by Tim Medin
+*** Updated by Tim Medin <tim@securitywhole.com>
 ***
 ********************************************************************************
 *** This program is free software; you can redistribute it and/or

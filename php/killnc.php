@@ -5,14 +5,15 @@
 *** A Collection of Injectable Files used during a Penetration Test
 ***
 *** More information is available at:
-***  http://laudanum.secureideas.net
+***  http://laudanum.professionallyevil.com/
 ***  laudanum@secureideas.net
 ***
 ***  Project Leads:
-***         Kevin Johnson <kjohnson@secureideas.net>
-***         Tim Medin <tim@counterhack.com>
+***         Kevin Johnson @secureideas <kjohnson@secureideas.com>
+***         Tim Medin @timmedin <tim@securitywhole.com>
+***         John Sawyer @johnhsawyer <john@inguardians.com>
 ***
-*** Copyright 2014 by Kevin Johnson and the Laudanum Team
+*** Copyright 2015 by The Laudanum Team
 ***
 ********************************************************************************
 ***

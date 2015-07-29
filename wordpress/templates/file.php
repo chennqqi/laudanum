@@ -10,14 +10,14 @@
 ***
 ***  Project Leads:
 ***         Kevin Johnson <kjohnson@secureideas.net
-***         Tim Medin <tim@counterhack.com>
+***         Tim Medin <tim@securitywhole.com>
 ***
 *** Copyright 2014 by Kevin Johnson and the Laudanum Team
 ***
 ********************************************************************************
 ***
 *** This file allows browsing of the file system.
-*** Written by Tim Medin <tim@counterhack.com>
+*** Written by Tim Medin <tim@securitywhole.com>
 ***
 *** 12/28/2013 - updated by Jason Gillam <jgillam@secureideas.com> - fixed parent folder.
 ***
