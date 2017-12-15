@@ -12,7 +12,7 @@
 ***
 ***  Project Leads:
 ***         Kevin Johnson @secureideas <kjohnson@secureideas.com>
-***         Tim Medin @timmedin <tim@securitywhole.com>
+***         Tim Medin @timmedin <tim@redsiege.com>
 ***         John Sawyer @johnhsawyer <john@inguardians.com>
 ***
 *** Copyright 2015 by The Laudanum Team
@@ -21,7 +21,7 @@
 ***
 *** This file provides a console for working with remote shells.
 *** //TODO: Add the ability to strip out extra text so only shell output is shown
-*** Written by Tim Medin <tim@securitywhole.com>
+*** Written by Tim Medin <tim@redsiege.com>
 ***
 ********************************************************************************
 *** This program is free software; you can redistribute it and/or

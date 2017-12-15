@@ -10,14 +10,14 @@
 ***
 ***  Project Leads:
 ***         Kevin Johnson <kjohnson@secureideas.net
-***         Tim Medin <tim@securitywhole.com>
+***         Tim Medin <tim@redsiege.com>
 ***
-*** Copyright 2014 by Kevin Johnson and the Laudanum Team
+*** Copyright 2018 by Kevin Johnson and the Laudanum Team
 ***
 ********************************************************************************
 ***
 *** This file allows browsing of the file system.
-*** Written by Tim Medin <tim@securitywhole.com>
+*** Written by Tim Medin <tim@redsiege.com>
 ***
 *** 12/28/2013 - updated by Jason Gillam <jgillam@secureideas.com> - fixed parent folder.
 ***
@@ -66,7 +66,7 @@ function wpl_error_handler($errno, $errstr, $errfile, $errline, $errcontext) {
 
   <hr>
   <address>
-  Copyright &copy; 2014, <a href="mailto:laudanum@secureideas.net">Kevin Johnson</a> and the Laudanum team.<br/>
+  Copyright &copy; 2018, <a href="mailto:laudanum@secureideas.net">Kevin Johnson</a> and the Laudanum team.<br/>
   Written by Tim Medin.<br/>
   Get the latest version at <a href="http://laudanum.secureideas.net">laudanum.secureideas.net</a>.
   </address>
@@ -174,7 +174,7 @@ else {
 </table>
   <hr>
   <address>
-  Copyright &copy; 2014, <a href="mailto:laudanum@secureideas.net">Kevin Johnson</a> and the Laudanum team.<br/>
+  Copyright &copy; 2018, <a href="mailto:laudanum@secureideas.net">Kevin Johnson</a> and the Laudanum team.<br/>
   Written by Tim Medin.<br/>
   Get the latest version at <a href="http://laudanum.secureideas.net">laudanum.secureideas.net</a>.
   </address>

@@ -12,7 +12,7 @@
 ***
 ***  Project Leads:
 ***         Kevin Johnson @secureideas <kjohnson@secureideas.net
-***         Tim Medin @timmedin <tim@securitywhole.com>
+***         Tim Medin @timmedin <tim@redsiege.com>
 ***         John Sawyer @johnhsawyer <john@inguardians.com>
 ***
 *** Copyright 2015 by The Laudanum Team
@@ -91,7 +91,7 @@
 
     <hr/>
     <address>
-        Copyright &copy; 2014, <a href="mailto:laudanum@secureideas.net">Kevin Johnson</a> and the Laudanum team.<br/>
+        Copyright &copy; 2018, <a href="mailto:laudanum@secureideas.net">Kevin Johnson</a> and the Laudanum team.<br/>
         Written by Tim Medin.<br/>
         Bug fixes by Matt Presson<br/>
         Get the latest version at <a href="http://laudanum.secureideas.net">laudanum.secureideas.net</a>.

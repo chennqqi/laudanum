@@ -10,9 +10,9 @@
 ***
 ***  Project Leads:
 ***         Kevin Johnson <kjohnson@secureideas.net>
-***         Tim Medin <tim@securitywhole.com>
+***         Tim Medin <tim@redsiege.com>
 ***
-*** Copyright 2014 by Kevin Johnson and the Laudanum Team
+*** Copyright 2018 by Kevin Johnson and the Laudanum Team
 ***
 ********************************************************************************
 ***

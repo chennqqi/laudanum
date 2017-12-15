@@ -11,7 +11,7 @@ ini_set('session.use_cookies', '0');
 ***
 ***  Project Leads:
 ***         Kevin Johnson @secureideas <kjohnson@secureideas.com>
-***         Tim Medin @timmedin <tim@securitywhole.com>
+***         Tim Medin @timmedin <tim@redsiege.com>
 ***         John Sawyer @johnhsawyer <john@inguardians.com>
 ***
 *** Copyright 2015 by The Laudanum Team
@@ -19,7 +19,7 @@ ini_set('session.use_cookies', '0');
 ********************************************************************************
 ***
 *** This file allows browsing of the file system.
-*** Written by Tim Medin <tim@securitywhole.com>
+*** Written by Tim Medin <tim@redsiege.com>
 ***
 ********************************************************************************
 *** This program is free software; you can redistribute it and/or
@@ -82,7 +82,7 @@ function error_handler($errno, $errstr, $errfile, $errline, $errcontext) {
 
   <hr>
   <address>
-  Copyright &copy; 2014, <a href="mailto:laudanum@secureideas.net">Kevin Johnson</a> and the Laudanum team.<br/>
+  Copyright &copy; 2018, <a href="mailto:laudanum@secureideas.net">Kevin Johnson</a> and the Laudanum team.<br/>
   Written by Tim Medin.<br/>
   Get the latest version at <a href="http://laudanum.secureideas.net">laudanum.secureideas.net</a>.
   </address>
@@ -269,7 +269,7 @@ if ($url == "") {
 </form>
   <hr>
   <address>
-  Copyright &copy; 2014, <a href="mailto:laudanum@secureideas.net">Kevin Johnson</a> and the Laudanum team.<br/>
+  Copyright &copy; 2018, <a href="mailto:laudanum@secureideas.net">Kevin Johnson</a> and the Laudanum team.<br/>
   Written by Tim Medin.<br/>
   Get the latest version at <a href="http://laudanum.secureideas.net">laudanum.secureideas.net</a>.
   </address>

@@ -10,7 +10,7 @@
 ' ***
 ' ***  Project Leads:
 ' ***         Kevin Johnson @secureideas <kjohnson@secureideas.com>
-' ***         Tim Medin @timmedin <tim@securitywhole.com>
+' ***         Tim Medin @timmedin <tim@redsiege.com>
 ' ***         John Sawyer @johnhsawyer <john@inguardians.com>
 ' ***
 ' *** Copyright 2015 by The Laudanum Team
@@ -18,7 +18,7 @@
 ' ********************************************************************************
 ' ***
 ' ***   Updated and fixed by Robin Wood <Digininja>
-' ***   Updated and fixed by Tim Medin <tim@securitywhole.com>
+' ***   Updated and fixed by Tim Medin <tim@redsiege.com>
 ' ***
 ' ********************************************************************************
 ' *** This program is free software; you can redistribute it and/or
@@ -76,7 +76,7 @@ Command: <Input width="200" type="text" name="cmd" value="<%=cmd%>" /><br />
 </form>
 <hr/>
 <address>
-Copyright &copy; 2014, <a href="mailto:laudanum@secureideas.net">Kevin Johnson</a> and the Laudanum team.<br/>
+Copyright &copy; 2018, <a href="mailto:laudanum@secureideas.net">Kevin Johnson</a> and the Laudanum team.<br/>
 Written by Tim Medin.<br/>
 Get the latest version at <a href="http://laudanum.secureideas.net">laudanum.secureideas.net</a>.
 </address>
